@@ -258,7 +258,7 @@ main i:first-child{
 .nosotroscolumn {
   float: left;
   width: 30%;
-  padding: 10px;
+  padding: 30px;
   margin-left: 20%;
   text-align: left;
   overflow: visible;
@@ -267,7 +267,7 @@ main i:first-child{
 .nosotroscolumn1{
 	float: left;
   width: 30%;
-  padding: 10px;
+  padding: 30px;
   margin-right: 20%;
   text-align: left;
 }
@@ -281,22 +281,36 @@ main i:first-child{
 .column31{
 	float: left;
   width:25%;
-  padding: 10px;
+  padding: 20px;
   margin-left: 12.5%;
 }
 .column32{
 	float: left;
   width:25%;
-  padding: 10px;
+  padding: 20px;
 }
 .column33{
 	margin-right: 12.5%;
 	float: left;
   width:25%;
-  padding: 10px;
+  padding: 20px;
 }
 
 .que{
 	border: 1px solid #d7dbd8;
 	padding: 40px;
+}
+
+.row u{
+	text-decoration-color: #e65c00;
+}
+
+.row i{
+	color: #e65c00;
+}
+
+h2{
+	font-family: "Montserrat";
+	font-weight: 600;
+	color: #222222;
 }
