@@ -102,6 +102,15 @@ main{
 	margin: 0;
 }
 
+#wrapper1{
+	position: absolute; /*Relavtive makes the footer appear on the end of the page*/
+	bottom: 0;
+	left:0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
 .footer-img{
 	position: relative;
 	height: 100px;
@@ -541,4 +550,90 @@ margin: 10px;
 .register select{
 	width: 40%;
 	padding: 6px;
+}
+
+
+.sidemenu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: absolute;
+  height:700px;
+  /*overflow: auto;*/
+}
+
+.sidemenu li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.sidemenu li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidemenu li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.eventstable{
+	margin-left:25%;
+	margin-right: 20%;
+	text-align: left;
+	height: 700px;
+}
+
+.eventstable table{
+	text-align: center;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+#displayevent th{
+	padding: 20px 100px 0 ;
+}
+
+#displayevent td{
+	padding: 10px;
+}
+
+.edit{
+	background-color: #65f0e6;
+	color: black;
+	width: 25%;
+}
+
+.delete{
+	color: white;
+	width: 25%;
+	background-color: #f55673;
+}
+
+.addevent{
+	padding-top: 100px;
+	border: 1px solid white;
+	margin-left:25%;
+	margin-right: 20%;
+	text-align: center;
+	height: 700px;
+}
+.addevent ul{
+	list-style-type: none;
+
+}
+
+.addevent li{
+	display: inline-block;
+	padding-right: 30px;
+}
+
+.addeventin{
+	width: 300px;
+	height: 30px;
+	padding: 2px;
 }
