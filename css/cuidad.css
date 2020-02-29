@@ -7,7 +7,7 @@ body{
 	text-align: center;
 	height: 50px;
 	margin: 0;
-	border: 1px solid #e65c00;
+	border: 1px solid white;
 }
 
 img{
@@ -54,7 +54,6 @@ li a{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-transform: uppercase;
 }
 
 .centered h1{
@@ -64,6 +63,28 @@ li a{
 .centered p{
 	margin: 0; 	
   	font-size: 1.0rem;
+}
+
+.homecontainer{
+ position: relative;
+  text-align: left;
+  color: white;
+  height: 300px;
+}
+
+.homecentered{
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.homecentered h1{
+	margin: 0;
+}
+
+.homecentered h1 i{
+	color: #e65c00;
 }
 
 main{
@@ -313,4 +334,149 @@ h2{
 	font-family: "Montserrat";
 	font-weight: 600;
 	color: #222222;
+}
+
+.objective{
+	margin-left: 30%;
+	margin-right: 30%;
+	
+	margin-top: 20px;
+	padding: 20px 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.objective h2{
+	margin: 0;
+}
+
+.objective p{
+	margin: 0;
+}
+
+.mainnos h2{
+	margin-bottom: 0;
+}
+
+.mainnos .row{
+	margin-top: 0;
+}
+
+.events {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  margin-left: 10%;
+  text-align: left;
+  background-color: #e65c00;
+}
+
+.register{
+	background-image: url("../img/homepage-one-banner.jpg");
+	float: left;
+  width: 40%;
+  padding: 10px;
+  margin-right: 10%;
+  text-align: center;
+  background-size: cover;
+  color: white;
+
+  
+}
+
+/* Clear floats after the columns */
+.registrar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.register h2{
+	color: white;
+}
+
+.reg_back{
+	size: 80px;
+background: transparent;
+color: white;
+padding: 5px;
+margin: 10px;
+}
+
+.aliados{
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	background-color: #d7deda;
+	border: 1px solid #d7deda;
+}
+
+.aliados_ul{
+	margin-top: 50px;
+	left: 50%;
+	position: relative;
+	text-align: center;
+  	transform: translate(-50%, -50%);
+
+ }
+
+.aliados_ul li{
+	padding: 0 10%;
+	position: relative;
+	display: inline-block;
+}
+
+.aliados_ul li img{
+	width: 150px;
+}
+
+.aliados i{
+	color: #e65c00;
+}
+
+.mainblog{
+	margin-top: 50px;
+	left: 50%;
+	position: relative;
+	text-align: center;
+  	transform: translate(-50%, -50%);
+  	margin-bottom: 0;
+}
+
+.mainblog li{
+	margin-top: 5%;
+	margin-right: 2%;
+	position: relative;
+	display: inline-block;
+	border: 1px solid #dbd5d5;
+}
+
+.mainblog li img{
+	height: 100px;
+	width: 200px;
+}
+
+.blog i{
+	color: #e65c00;
+}
+
+.events ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+.events li{
+	display: inline-block;
+	padding: 20px;
+}
+
+.home{	
+	z-index: 1;
+
+}
+
+.overhome{
+	position: absolute;	
+	left: 0;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
 }
