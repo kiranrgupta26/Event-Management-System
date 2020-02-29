@@ -81,12 +81,13 @@ li a{
 
 .homecentered h1{
 	margin: 0;
-}
-
-.homecentered h1 i{
 	color: #e65c00;
 }
 
+.homecentered i{
+	margin: 0;
+	color: white;
+}
 main{
 	text-align: center;
 	position: relative;
@@ -317,6 +318,10 @@ main i:first-child{
   padding: 20px;
 }
 
+.column31,.column32,.column33 p{
+	text-align: left;
+}
+
 .que{
 	border: 1px solid #d7dbd8;
 	padding: 40px;
@@ -337,11 +342,11 @@ h2{
 }
 
 .objective{
-	margin-left: 30%;
-	margin-right: 30%;
+	margin-left: 28%;
+	margin-right: 28%;
 	
 	margin-top: 20px;
-	padding: 20px 20px;
+	padding: 20px 10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -364,23 +369,27 @@ h2{
 .events {
   float: left;
   width: 40%;
-  padding: 10px;
+  
+  padding: 15px 10px;
   margin-left: 10%;
   text-align: left;
   background-color: #e65c00;
 }
 
+.events p{
+	color: white;
+}
 .register{
 	background-image: url("../img/homepage-one-banner.jpg");
 	float: left;
-  width: 40%;
+  width: 40%;	
+  
   padding: 10px;
   margin-right: 10%;
   text-align: center;
   background-size: cover;
   color: white;
 
-  
 }
 
 /* Clear floats after the columns */
@@ -390,9 +399,23 @@ h2{
   clear: both;
 }
 .register h2{
+	padding: 0;
+	margin: 0;
 	color: white;
 }
 
+/*.register p{
+	padding: 0;
+	margin: 0;
+	color: white;
+}*/
+
+.register button{
+	float: left;
+	margin-left: 50px;
+	width: 200px;
+	padding: 5px;
+}
 .reg_back{
 	size: 80px;
 background: transparent;
@@ -451,7 +474,7 @@ margin: 10px;
 
 .mainblog li img{
 	height: 100px;
-	width: 200px;
+	width: 300px;
 }
 
 .blog i{
@@ -464,8 +487,15 @@ margin: 10px;
 }
 
 .events li{
+	text-align: center;
 	display: inline-block;
-	padding: 20px;
+	padding: 0 50px;
+	margin-left: 40px;
+	clear: left;
+}
+
+.events li img{
+
 }
 
 .home{	
@@ -479,4 +509,9 @@ margin: 10px;
 	z-index: 2;
 	height: 100%;
 	width: 100%;
+}
+
+.register select{
+	width: 40%;
+	padding: 6px;
 }
