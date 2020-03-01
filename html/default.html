@@ -108,7 +108,29 @@ Implementar campañas de sensibilización para motivar en la audiencia el ejerci
 				<h2>Registrate con Nosotros</h2><br>
 				<p>Para estas informado de nuestas actividades y eventos</p>
 				<form method="post">
-					<input type="text" name="NombreCompleto" placeholder="Nombre Completo" class = "reg_back" size="30">
+					<ul>
+						<li><input type="text" name="NombreCompleto" placeholder="Nombre Completo" class = "reg_back"></li>
+						<li><input type="text" name="Correo" placeholder="Correo" class = "reg_back"></li>
+					</ul>
+					<ul>
+						<li>
+							<input type="text" name="Telefono" placeholder="Telefono" class = "reg_back">
+						</li>
+						<li>
+							<select name="Origen" placeholder="Cuidad de Origen" class="reg_back">
+						<option disabled selected>Cuidad de Origen</option>
+						<option>Arlington</option>
+						<option>Dallas</option>
+						<option>Austin</option>
+					</select>
+						</li>
+					</ul>
+					
+					<ul>
+						<li><input type="password" name="password" placeholder="Clave" class = "reg_back"></li>
+						<li><input type="password" name="confirmpassword" placeholder=" Confirmar Clave" class = "reg_back"></li>
+					</ul>
+					<!-- <input type="text" name="NombreCompleto" placeholder="Nombre Completo" class = "reg_back" size="30">
 					<input type="text" name="Correo" placeholder="Correo" class = "reg_back" size="30">
 					<input type="text" name="Telefono" placeholder="Telefono" class = "reg_back" size="30">
 					<select name="Origen" placeholder="Cuidad de Origen" class="reg_back">
@@ -118,7 +140,7 @@ Implementar campañas de sensibilización para motivar en la audiencia el ejerci
 						<option>Austin</option>
 					</select>
 					<input type="password" name="password" placeholder="Clave" class = "reg_back" size="30">
-					<input type="password" name="confirmpassword" placeholder=" Confirmar Clave" class = "reg_back" size="30">
+					<input type="password" name="confirmpassword" placeholder=" Confirmar Clave" class = "reg_back" size="30"> -->
 					<br>
 					<button>Registrar Ahora</button> <br>
 				</form>
