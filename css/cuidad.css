@@ -370,9 +370,7 @@ main i:first-child{
 	
 }
 
-/*.column31,.column32,.column33 h4{	
-	color: #a3a29e;
-}*/
+
 .que{
 	color: #a3a29e;
 	border: 1px solid #d7dbd8;
@@ -396,8 +394,7 @@ h2{
 .objective{
 	margin-left: 28%;
 	margin-right: 28%;
-	
-	margin-top: 20px;
+	margin-top: 2%;
 	padding: 20px 10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -418,24 +415,24 @@ h2{
 	margin-top: 0;
 }
 
+
 .events {
   float: left;
   width: 40%;
-  
-  padding: 15px 10px;
+  padding: 2.63% 0.5%;
   margin-left: 10%;
   text-align: left;
   background-color: #e65c00;
 }
 
 .events p{
+	font-size: 100%;
 	color: white;
 }
 .register{
 	background-image: url("../img/homepage-one-banner.jpg");
 	float: left;
   width: 40%;	
-  
   padding: 10px;
   margin-right: 10%;
   text-align: center;
@@ -444,12 +441,16 @@ h2{
 
 }
 
+
 /* Clear floats after the columns */
 .registrar:after {
   content: "";
-  display: table;
+  display: table; /*table*/
   clear: both;
+  
+  height: 0;
 }
+
 .register h2{
 	padding: 0;
 	margin: 0;
@@ -464,12 +465,12 @@ h2{
 
 .register button{
 	float: left;
-	margin-left: 50px;
-	width: 200px;
+	margin-left: 8%;
+	width: 40%;
 	padding: 5px;
 }
 .reg_back{
-	size: 80px;
+	size: 100%;
 background: transparent;
 color: white;
 padding: 5px;
@@ -508,12 +509,13 @@ margin: 10px;
 }
 
 .mainblog{
-	margin-top: 50px;
+	/*margin-top: 10%;*/
 	left: 50%;
 	position: relative;
 	text-align: center;
-  	transform: translate(-50%, -50%);
+  	transform: translate(-50%, -0%);
   	margin-bottom: 0;
+  	
 }
 
 .mainblog li{
@@ -529,6 +531,9 @@ margin: 10px;
 	width: 300px;
 }
 
+.blog{
+	position: relative;
+}
 .blog i{
 	color: #e65c00;
 }
@@ -541,13 +546,13 @@ margin: 10px;
 .events li{
 	text-align: center;
 	display: inline-block;
-	padding: 0 50px;
-	margin-left: 40px;
-	clear: left;
+	padding: 0 7%;
+	/*margin-left: 40px;*/
+	/*clear: left;*/
 }
 
 .events li img{
-
+	width: 40%;
 }
 
 .home{	
