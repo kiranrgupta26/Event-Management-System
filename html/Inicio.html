@@ -16,8 +16,8 @@
 			<a href="Equipos.html">Equipos </a> /
 			<a href="#">Blog </a> /
 			<a href="Contact Us.html">Contacto </a> /
-			<a href="#">Inicio de Sesion </a> /
-			<a href="#">Sign Up Registrarse </a> 
+			<a href="#popup1">Inicio de Sesion </a>
+			
 		</nav>
 		
 	</header>
@@ -102,17 +102,19 @@ Implementar campañas de sensibilización para motivar en la audiencia el ejerci
 
 				<h2>Registrate con Nosotros</h2><br>
 				<p>Para estas informado de nuestas actividades y eventos</p>
-				<input type="text" name="NombreCompleto" placeholder="Nombre Completo" class = "reg_back" size="30">
-				<input type="text" name="Correo" placeholder="Correo" class = "reg_back" size="30">
-				<input type="text" name="Telefono" placeholder="Telefono" class = "reg_back" size="30">
-				<select name="Origen" placeholder="Cuidad de Origen" class="reg_back">
-					<option disabled selected>Cuidad de Origen</option>
-					<option>Arlington</option>
-					<option>Dallas</option>
-					<option>Austin</option>
-				</select>
-				<br>
-				<button>Registrar Ahora</button> <br>
+				<form method="post">
+					<input type="text" name="NombreCompleto" placeholder="Nombre Completo" class = "reg_back" size="30">
+					<input type="text" name="Correo" placeholder="Correo" class = "reg_back" size="30">
+					<input type="text" name="Telefono" placeholder="Telefono" class = "reg_back" size="30">
+					<select name="Origen" placeholder="Cuidad de Origen" class="reg_back">
+						<option disabled selected>Cuidad de Origen</option>
+						<option>Arlington</option>
+						<option>Dallas</option>
+						<option>Austin</option>
+					</select>
+					<br>
+					<button>Registrar Ahora</button> <br>
+				</form>
   			</div>
 		</div>
 
@@ -130,7 +132,7 @@ Implementar campañas de sensibilización para motivar en la audiencia el ejerci
 			</div>
 		</div>
 
-		<div class="Blog">
+		<div class="blog">
 			<h2>Nuestros <i>Blog</i> </h2>
 			<p>Esta sección esta pensada para integrar a los ciudadanos y poder tener un feedback directo con nuestra comunidad</p>
 			<div class="mainblog">
@@ -154,13 +156,37 @@ Implementar campañas de sensibilización para motivar en la audiencia el ejerci
 
 	
 
+	<div id="popup1" class="overlay">
+		<div class="popup">
+			<h1>Inicio de Sesion</h1>
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				<form method="post" action="Events.html">
+					<div class="popup_indiv">
+						Correo <br>
+						<input type="text" name="username" placeholder="Tu Correo" id="username"  class="logintext"> <br><br>
+						Contraseña <br>
+						<input type="password" name="password" placeholder="Tu Contraseña"  class="logintext"> <br>
+					</div>
+					<br>
+					<input type="submit" name="login" value="ENVIAR" class="enviar1">
+					<br>
+					<br>
+					&nbsp;
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
 	<footer id="wrapper">
 		<div class="footer-img">
 			<img src="../img/homepage-one-banner.jpg" alt="Snow" id="imgid">
 			<div class="footer-1-content">
 				<ul>
 					<li>
-						<b>Contactate con</b>  <i id="nosotros">Nosotros</i>
+						<b>Contactate con</b>  <i id="nosotros">Nosotros</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					</li>
 					<li>
 						<input type="text" name="email-us" placeholder="Email" size = "35" id="email-us">	
@@ -173,9 +199,11 @@ Implementar campañas de sensibilización para motivar en la audiencia el ejerci
 		</div>
 
 		<div class="footer-2">
-			<span id="email-logo">&#9993;</span>
-			<span></span>
-			<span></span>
+			<ul>
+				<li><img src="../img/email1.png"></li>				
+				<li><img src="../img/twitter_grey.png"></li>
+				<li><img src="../img/instagram_grey.png"></li>
+			</ul>
 		</div>
 		<div class="footer-3">
 			<ul id="footer-apps">
@@ -184,6 +212,9 @@ Implementar campañas de sensibilización para motivar en la audiencia el ejerci
 				</li>
 				<li>
 					&copy; 2020 All rights Reserved
+				</li>
+				<li>
+					<button id="foot_button" value="^">^</button>
 				</li>
 			</ul>
 		</div>
