@@ -722,7 +722,7 @@ margin: 10px;
 }
 
 .logintext {
-	height: 20px;
+	height: 40px;
 	width: 94%;
 	padding: 10px;
 	border:1px solid #ccc;
@@ -747,9 +747,13 @@ margin: 10px;
 }
 
 h1,h2,h3,h4,h5,h6{
-	font: Roboto;
+	font-family: Roboto;
 }
 
 p{
-	font: Montserrat;
+	font-family:  Montserrat;
+}
+
+.popup i{
+	color: #e65c00;
 }
