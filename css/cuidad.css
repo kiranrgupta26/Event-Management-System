@@ -445,7 +445,7 @@ h2{
 	display: -webkit-flex; display: -ms-flexbox; display: flex; overflow: hidden;
 }
 
-.registrar .events, .register     { flex: 1;}
+.registrar .events, .register { flex: 1;}
 
 /* Clear floats after the columns */
 /*.registrar:after {
