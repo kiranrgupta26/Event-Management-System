@@ -7,6 +7,7 @@ Deo, Neel Jayant : 1001773075 -->
 	<title>Equipos</title>
 	<link rel="stylesheet" type="text/css" href="../css/cuidad.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="../js/validation.js"></script>
 </head>
 <body>
 	<header class="topmenu">
@@ -192,12 +193,14 @@ Deo, Neel Jayant : 1001773075 -->
 			<h1>Inicio de <i>Sesion</i></h1>
 			<a class="close" href="#">&times;</a>
 			<div class="content">
-				<form method="post" action="Events.html">
+				<form method="post" action="Login.php">
 					<div class="popup_indiv">
+						<input type="radio" name="logintype" value = "admin" checked>Admin
+						<input type="radio" name="logintype" value = "user">User
 						Correo <br>
-						<input type="text" name="username" placeholder="Tu Correo" id="username"  class="logintext"> <br><br>
+						<input type="text" name="username" placeholder="Tu Correo" id="username"  class="logintext" required> <br><br>
 						Contraseña <br>
-						<input type="password" name="password" placeholder="Tu Contraseña"  class="logintext"> <br>
+						<input type="password" name="password" placeholder="Tu Contraseña"  class="logintext" required> <br>
 					</div>
 					<br>
 					<input type="submit" name="login" value="ENVIAR" class="enviar1">
@@ -214,17 +217,19 @@ Deo, Neel Jayant : 1001773075 -->
 		<div class="footer-img">
 			<img src="../img/homepage-one-banner.jpg" alt="Snow" id="imgid">
 			<div class="footer-1-content">
+				<form  name = "footerForm" method = "post" onsubmit="return footerContact()">
 				<ul>
 					<li>
-						<b>Contactate con</b>  <i id="nosotros">Nosotros</i>
+						<b>Contactate con</b>  <i id="nosotros">Nosotros</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					</li>
 					<li>
-						<input type="text" name="email-us" placeholder="Email" size = "35" id="email-us">	
+						<input type="text" name="email-us" placeholder="Email" size = "35" id="email-us" required>	
 					</li>
 					<li>
-						<button class="enviar">ENVIAR</button>
+						<button type = "submit" class ="enviar">ENVIAR</button>
 					</li>
-				</ul>				
+				</ul>
+				</form>			
 			</div>
 		</div>
 
@@ -242,7 +247,7 @@ Deo, Neel Jayant : 1001773075 -->
 					&copy; 2020 All rights Reserved
 				</li>
 				<li>
-					<button id="foot_button" value="^">^</button>
+					<button  onclick="topFunction()" id="foot_button" value="^">^</button>
 				</li>
 			</ul>
 		</div>

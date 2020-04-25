@@ -1,3 +1,7 @@
+<?php
+session_start();
+include('contactus.php');
+?>
 <!-- Gupta,Kiran Rambilas : 1001726759
 Deo, Neel Jayant : 1001773075 -->
 
@@ -16,7 +20,7 @@ Deo, Neel Jayant : 1001773075 -->
 			<a href="Nosotros.html">Nosotros </a> /
 			<a href="Equipos.html">Equipos </a> /
 			<a href="http://krg6759.uta.cloud/">Blog </a> /
-			<a href="Contact Us.html">Contacto </a> /
+			<a href="Contact Us.php">Contacto </a> /
 			<a href="#popup1">Inicio de Sesion </a> 
 			 
 		</nav>
@@ -65,8 +69,8 @@ Deo, Neel Jayant : 1001773075 -->
 			    <h1>FORMULARIO DE</h1>
 			    <h1 class="contacto"><i><u>CO</u>NTACTO</i></h1>
 
-			    <form name="contactUs" method="post" action="contactus.php" onsubmit="return footerContact()">
-			    	<input type="submit" class="enviar" value="ENVIAR">
+			    <form name="contactUs" method="post" action="Contact Us.php" onsubmit="return footerContact()">
+			    	
 				    <p>Tu Nombre (requerido)</p>
 				    <input type="text" name="name" placeholder="Tu Nombre" size="50" class="inputT" required>
 				    <p>Tu Correo (requerido)</p>
@@ -77,7 +81,7 @@ Deo, Neel Jayant : 1001773075 -->
 				    <textarea name ="querydesc" rows="4" cols="50" placeholder="Asunto" required></textarea>
 				    <br>
 				    <input type="text" name="" size = "54" style="width: 0px;height: 0px">
-				    
+				    <input type="submit" name ="contact" class="enviar" value="ENVIAR">
 			    </form>
   			</div>
 		</div>

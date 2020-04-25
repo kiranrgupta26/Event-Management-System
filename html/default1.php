@@ -1,0 +1,261 @@
+<?php
+include('Login.php');
+?>
+<!-- Gupta,Kiran Rambilas : 1001726759
+Deo, Neel Jayant : 1001773075 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio</title>
+	<link rel="stylesheet" type="text/css" href="../css/cuidad.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="../js/validation.js"></script>
+</head>
+<body>
+	
+	<header class="topmenu">
+		<img src="../img/Logotipo.png">
+		<nav>		
+			<a href="default1.php">Inicio </a> /
+			<a href="Nosotros.html">Nosotros </a> /
+			<a href="Equipos.html">Equipos </a> /
+			<a href="http://krg6759.uta.cloud/">Blog </a> /
+			<a href="Contact Us.html">Contacto </a> /
+			<a href="#popup1">Inicio de Sesion </a>
+			
+		</nav>
+		
+	</header>
+
+	<div class="homecontainer">
+  		<img src="../img/homepage-one-banner.jpg" alt="Snow" style="width:100%; height: 100%;" class="home">
+  		<img src="../img/objects.png" class="overhome">
+  		<div class="homecentered">
+  			<h1>GENTE </h1>
+  			<h1><i>Y CIUDAD</i> </h1>
+  			<p>Buscamos marcar un punto de partida para la transformación de nuestras dificultades y diferencias en cimientos firmes que, desde las ciudades, requieren nuestros países latinoamericanos para convertirse en los mejores lugares para vivir, ya no solo por las bellezas y riquezas de nuestras tierras, sino por lo decisión de su gente de aportar lo mejor de si para mejorar su calidad de vida y asegurar los derechos de las futuras generaciones.</p>
+  		</div>
+	</div>
+
+	
+	<main>
+		<div class="objective">
+			<h2>OBJETIVOS</h2>
+			<p>Realizar investigaciones, estudios y propuestas legislativas, relacionados con la gestión de los gobierno locales para el desarrollo sostenible.<br>
+				Formular proyectos para promover la participación ciudadana en iniciativas locales para la sostenibilidad.<br>
+Desarrollar programas de capacitación en las áreas de participación ciudadana local y gobierno abierto para la sostenibilidad.<br>
+Promover iniciativas de responsabilidad social y voluntariado, como espacios de participación ciudadana.<br>
+Implementar campañas de sensibilización para motivar en la audiencia el ejercicio activo de la ciudadanía como eje fundamental para la transformación de las ciudades.
+</p>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="mainnos">
+			<h2>Nuestros <i>Valores</i></h2>
+			<div class="row">
+	  			<div class="column31">		    
+				    <h2><u>CA</u>LIDAD</h2>
+				    <p>Es la práctica de los integrantes de Gente & Ciudad que fomenta una mejora continua para alcanzar la misión de la organización.</p>
+				    <h2><u>CO</u>MPROMISO</h2>
+				    <p>Los integrantes de Gente & Ciudad asumen como propio el cumplimiento de las obligaciones de la institución.</p>
+				</div>
+				<div class="column32">		    
+				    <h2><u>CO</u>NFIANZA</h2>
+				    <p>Es la seguridad que Gente & Ciudad genera a través de sus actos</p>
+				    <h2><u>CO</u>OPERACIÓN</h2>
+				    <p>En Gente & Ciudad se promueve la suma de fuerzas para lograr objetivos compartidos.</p>
+	  			</div>
+	  			<div class="column33">		  
+				    <h2><u>CO</u>HERENCIA</h2>
+				    <p>Todas las actuaciones de Gente & Ciudad estarán en consonancia con sus valores institucionales</p>
+				    <h2><u>TR</u>ANSPARENCIA</h2>
+				    <p>Es la cualidad que caracteriza y promueve Gente & Ciudad que permite conocer claramente nuestro planteamientos y acciones.</p>
+	  			</div>
+			</div>
+		</div>
+
+
+		<div class="registrar" >		
+			<div class="events">
+			    <ul>
+			    	<li>
+			    		<img src="../img/microphone.png">
+			    		<p>18<span>&nbsp;</span>FOROS</p>
+			    	</li>
+
+			    	<li>
+			    		<img src="../img/participants.png">
+			    		<p>50<span>&nbsp;</span>+<span>&nbsp;</span>PASTICIPANTES</p>
+			    	</li>
+			    </ul>
+			    
+			    <ul>
+			    	<li>
+			    		<img src="../img/book.png">
+			    		<p>30<span>&nbsp;</span>EVENTOS</p>
+			    	</li>
+			    	<li>
+			    		<img src="../img/calender.png">
+			    		<p>3<span>&nbsp;</span>EVENTOS<span>&nbsp;</span>POR<span>&nbsp;</span>DIAS</p>
+			    	</li>
+			    </ul>
+			    
+			 
+
+			 </div>
+
+			 
+			<div class="register">
+
+				<h2>Registrate con Nosotros</h2><br>
+				<p>Para estas informado de nuestas actividades y eventos</p>
+
+				<form method="post" name="RegisterForm" action="default1.php" onsubmit="return validateRegisterForm()">
+					<?php
+						include('errors.php');
+					?>
+					<input type="radio" name="registertype" value = "admin" checked>Admin
+					<input type="radio" name="registertype" value = "user">User
+					<ul>
+						<li><input type="text" name="NombreCompleto" placeholder="Nombre Completo" class = "reg_back" required></li>
+						<li><input type="text" name="Correo" class = "reg_back" required></li>
+					</ul>
+					<ul>
+						<li>
+							<input type="text" name="Telefono" placeholder="Telefono" class = "reg_back" required>
+						</li>
+						<li>
+							<select name="Origen" placeholder="Cuidad de Origen" class="reg_back" required>
+								<option value="">Cuidad de Origen</option>
+								<option>Arlington</option>
+								<option>Dallas</option>
+								<option>Austin</option>
+							</select>
+						</li>
+					</ul>
+					
+					<ul>
+						<li><input type="password" name="password" placeholder="Clave" class = "reg_back" required></li>
+						<li><input type="password" name="confirmpassword" placeholder=" Confirmar Clave" class = "reg_back" required></li>
+					</ul>
+					<br>
+					<input type="submit" name="reg_user" value="Registrar Ahora"><br>
+				</form>
+  			</div>
+
+		</div>
+
+		<div class="aliados">
+			<h2>Nuestros Aliados <i>Estrategicos</i> </h2>
+			<div class="aliados_ul">
+				<ul>
+					<li>
+						<img src="../img/image3.jpg">
+					</li>
+					<li>
+						<img src="../img/i.jpg">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="blog">
+			<div><h2>Nuestros <i>Blog</i> </h2>
+			<p>Esta sección esta pensada para integrar a los ciudadanos y poder tener un feedback directo con nuestra comunidad</p></div>
+			
+			<div class="mainblog">
+				<ul>
+					<li>
+						<img src="../img/image1.jpg">
+						<p>¿Ciudadanos?</p>
+					</li>
+					<li>
+						<img src="../img/image2.png">
+						<p>Efecto espejo: Calidad de vida</p>
+					</li>
+					<li>
+						<img src="../img/i.jpg">
+						<p>Evolución ciudadana (opinión)</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+
+	
+
+	<div id="popup1" class="overlay">
+		<div class="popup">
+			<h1>Inicio de Sesion</h1>
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				<form method="post" name = "onlogin" action="default1.php" onsubmit="return onlogin()">
+					<div class="popup_indiv">
+						<input type="radio" name="logintype" value = "admin" checked>Admin
+						<input type="radio" name="logintype" value = "user">User
+						Correo <br>
+						<input type="text" name="username" placeholder="Tu Correo" id="username"  class="logintext" required> <br><br>
+						Contraseña <br>
+						<input type="password" name="password" placeholder="Tu Contraseña"  class="logintext" required> <br>
+						<?php
+							include('errors.php');
+						?>
+					</div>
+					<br>
+					<input type="submit" name="login" value="ENVIAR" class="enviar1">
+					<br>
+					<br>
+					&nbsp;
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+	<footer id="wrapper">
+		<div class="footer-img">
+			<img src="../img/homepage-one-banner.jpg" alt="Snow" id="imgid">
+			<div class="footer-1-content">
+			<form  name = "footerForm" method = "post" onsubmit="return footerContact()">
+				<ul>
+					<li>
+						<b>Contactate con</b>  <i id="nosotros">Nosotros</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+					<li>
+						<input type="text" name="email-us" placeholder="Email" size = "35" id="email-us" required>	
+					</li>
+					<li>
+						<button type = "submit" class ="enviar">ENVIAR</button>
+					</li>
+				</ul>
+			</form>
+			</div>
+		</div>
+
+		<div class="footer-2">
+			<ul>
+				<li><img src="../img/email1.png"></li>				
+				<li><img src="../img/twitter_grey.png"></li>
+				<li><img src="../img/instagram_grey.png"></li>
+			</ul>
+		</div>
+		<div class="footer-3">
+			<ul id="footer-apps">
+				<li>
+					DiazApps
+				</li>
+				<li>
+					&copy; 2020 All rights Reserved
+				</li>
+				<li>
+					<button  onclick="topFunction()" id="foot_button" value="^">^</button>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	
+</body>
+</html>

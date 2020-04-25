@@ -650,6 +650,14 @@ margin: 5px;
 	padding: 10px;
 }
 
+#displayevent1 th{
+	padding: 20px 70px 0 ;
+}
+
+#displayevent1 td{
+	padding: 10px;
+}
+
 .edit{
 	background-color: #65f0e6;
 	color: black;
