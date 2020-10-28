@@ -1,7 +1,4 @@
-<?php
-session_start();
-include('updateevent.php');
-?>
+
 <!-- Gupta,Kiran Rambilas : 1001726759
 Deo, Neel Jayant : 1001773075 -->
 
@@ -34,49 +31,31 @@ Deo, Neel Jayant : 1001773075 -->
 
 	<nav class="sidemenu">
 		<ul>
-		  <?php  echo "<li><a href='Events.php'>Events</a></li>"; ?>
-		  <?php  
-		  echo "<li><a href='default1.php'>Logout</a></li>";
-		  ?>
+		  <?php  echo "<li><a href='Events.php?user=". $_GET['name']."'>Events</a></li>"; ?>
+		  <li><a href="default1.php">Logout</a></li>
 		</ul>
 	</nav>
 
 	<div class="addevent">
-		<?php
-		include 'connection.php';
-		$conn = OpenCon();
-		$eventid = $_GET["eventid"];
-		$userid = $_SESSION["userid"];
-
-		$sql = "SELECT eventName,adminID,email,location,date,time,phone FROM event where adminID='$userid' and eventID='$eventid'";
-		$result = mysqli_query($conn, $sql);
-		$row = mysqli_fetch_assoc($result);
-		$eventname = $row["eventName"];
-		$eventdate = $row["date"];
-		$eventtime = $row["time"];
-		$eventlocation = $row["location"];
-		$eventresponsible = $_SESSION["username"];
-		$tel = $row["phone"];
-		?>
-
-		<form method="post" action="EditEvent.php">
-		<input type="hidden" name="eventid" value=<?php echo $eventid ?>>
+		<form method="post" action="updateevent.php">
+		<input type="hidden" name="eventid" value=<?php echo $_GET["eventid"] ?>>
+		<input type="hidden" name="username" value=<?php echo $_GET['name'] ?>>
 		<ul>	
-			<li><input type="text" name="eventname" placeholder="Event Name" required class="addeventin" value=<?php echo $eventname ?> ></li>
-			<li><input type="date" name="eventdate" placeholder="Event Date" required class="addeventin"  value=<?php echo $eventdate ?> ></li>
+			<li><input type="text" name="eventname" placeholder="Event Name" required class="addeventin" value=<?php echo $_GET["eventname"] ?> ></li>
+			<li><input type="date" name="eventdate" placeholder="Event Date" required class="addeventin"  value=<?php echo $_GET["eventdate"] ?> ></li>
 		</ul>
 
 		<ul>			
-			<li><input type="time" name="eventtime" placeholder="Event Time" class="addeventin" required value=<?php echo $eventtime ?> ></li>			
-			<li><input type="text" name="eventlocation" placeholder="Event Location" class="addeventin" required value=<?php echo $eventlocation ?> ></li>			
+			<li><input type="time" name="eventtime" placeholder="Event Time" class="addeventin" required value=<?php echo $_GET["eventtime"] ?> ></li>			
+			<li><input type="text" name="eventlocation" placeholder="Event Location" class="addeventin" required value=<?php echo $_GET["eventlocation"] ?> ></li>			
 		</ul>
 
 		<ul>			
-			<li><input type="text" name="eventresponsible" placeholder="Event Responsible" class="addeventin" required value=<?php echo $eventresponsible ?> ></li>			
-			<li><input type="tel" name="eventtel" placeholder="Mobile" class="addeventin" required value=<?php echo $tel ?>> </li>		
-		</ul> 
+			<li><input type="text" name="eventresponsible" placeholder="Event Responsible" class="addeventin" required value=<?php echo $_GET["eventresponsible"] ?> ></li>			
+			<li><input type="tel" name="eventtel" placeholder="Mobile" class="addeventin" required value=<?php echo $_GET["mobile"] ?>> </li>		
+		</ul>
   	
-  <input type="submit" name="update" class="enviar" value="Update">
+  <input type="submit" class="enviar" value="Update">
   </form>
 </div>
 

@@ -1,10 +1,9 @@
 <?php
-session_start();
+
 include 'connection.php';
 
 $errors = array();
-
-$user = $_SESSION["username"];
+$user = $_GET["user"];
 $eventid = $_GET["eventid"];
 
 $conn = OpenCon();
@@ -29,6 +28,5 @@ if (mysqli_num_rows($result) > 0) {
 	}	
 }
 	
-header('Location: MyEvents.php');
-exit();
+header("Location: RegisterEvent.php?user=".$user);
 ?>

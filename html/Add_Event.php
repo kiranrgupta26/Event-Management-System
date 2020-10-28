@@ -1,7 +1,4 @@
-<?php
-session_start();
-include('addevent.php');
-?>
+
 <!-- Gupta,Kiran Rambilas : 1001726759
 Deo, Neel Jayant : 1001773075 -->
 
@@ -34,16 +31,15 @@ Deo, Neel Jayant : 1001773075 -->
 
 	<nav class="sidemenu">
 		<ul>
-			<?php  echo "<li><a href='Events.php'>Events</a></li>"; ?>	  
-		  <?php  
-		  echo "<li><a href='default1.php'>Logout</a></li>";
-		  ?>
+			<?php  echo "<li><a href='Events.php?user=". $_GET['name']."'>Events</a></li>"; ?>	  
+		  <li><a href="default1.php">Logout</a></li>
 		</ul>
 	</nav>
 
 	<div class="addevent">
-		<form method="post" name = "addEventForm" action="Add_Event.php" enctype="multipart/form-data" onsubmit="return addEvent()">	
+		<form method="post" name = "addEventForm" action="addevent.php" enctype="multipart/form-data" onsubmit="return addEvent()">	
 		<input type="hidden" name="userid" value=<?php echo $_GET['user'] ?>>
+		<input type="hidden" name="username" value=<?php echo $_GET['name'] ?>>
 		    <ul>
 		        <li><input type="file" name="image" required></li>
 		    </ul>
@@ -66,7 +62,7 @@ Deo, Neel Jayant : 1001773075 -->
 				<li><textarea name="eventdesc" rows="5" cols="100" placeholder="Event Description" required></textarea></li>
 			</ul>
 	  	
-	  		<input type="submit" name="add" class="enviar" value="Add Events">
+	  		<input type="submit" class="enviar" value="Add Events">
   		</form>
 </div>
 

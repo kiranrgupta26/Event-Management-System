@@ -1,7 +1,5 @@
 <?php
-if(isset($_POST["contact"]))
-{
-	include 'connection.php';
+include 'connection.php';
 	$email = $_POST["email"];
 	$query = $_POST["query"];
 	$querydesc = $_POST["querydesc"];
@@ -21,5 +19,5 @@ if(isset($_POST["contact"]))
 	$headers = "From: ".$Correo;
 	mail("njd3075@utacloud.reclaimhosting.com","Queries",$msg, $headers);
 	
-}
+	header('Location:Contact Us.html');
 ?>

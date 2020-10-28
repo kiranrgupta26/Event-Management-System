@@ -30,8 +30,8 @@ Deo, Neel Jayant : 1001773075 -->
 
 	<nav class="sidemenu">
 		<ul>
-		  <?php  echo "<li><a href='Events.php'>Events</a></li>"; ?>
-		  <?php  echo "<li><a class='active' href='displaycontactus.php'>Contact Us</a></li>"; ?>
+		  <?php  echo "<li><a href='Events.php?user=". $_GET['user']."'>Events</a></li>"; ?>
+		  <?php  echo "<li><a class='active' href='displaycontactus.php?user=". $_GET['user']."'>Contact Us</a></li>"; ?>
 		  
 		  <li><a href="default1.php">Logout</a></li>
 		</ul>

@@ -1,6 +1,4 @@
-<?php
-include('Login.php');
-?>
+
 <!-- Gupta,Kiran Rambilas : 1001726759
 Deo, Neel Jayant : 1001773075 -->
 <!DOCTYPE html>
@@ -112,10 +110,7 @@ Implementar campañas de sensibilización para motivar en la audiencia el ejerci
 				<h2>Registrate con Nosotros</h2><br>
 				<p>Para estas informado de nuestas actividades y eventos</p>
 
-				<form method="post" name="RegisterForm" action="default1.php" onsubmit="return validateRegisterForm()">
-					<?php
-						include('errors.php');
-					?>
+				<form method="post" name="RegisterForm" action="registeruser.php" onsubmit="return validateRegisterForm()">
 					<input type="radio" name="registertype" value = "admin" checked>Admin
 					<input type="radio" name="registertype" value = "user">User
 					<ul>
@@ -191,7 +186,7 @@ Implementar campañas de sensibilización para motivar en la audiencia el ejerci
 			<h1>Inicio de Sesion</h1>
 			<a class="close" href="#">&times;</a>
 			<div class="content">
-				<form method="post" name = "onlogin" action="default1.php" onsubmit="return onlogin()">
+				<form method="post" name = "onlogin" action="Login.php" onsubmit="return onlogin()">
 					<div class="popup_indiv">
 						<input type="radio" name="logintype" value = "admin" checked>Admin
 						<input type="radio" name="logintype" value = "user">User
@@ -199,9 +194,6 @@ Implementar campañas de sensibilización para motivar en la audiencia el ejerci
 						<input type="text" name="username" placeholder="Tu Correo" id="username"  class="logintext" required> <br><br>
 						Contraseña <br>
 						<input type="password" name="password" placeholder="Tu Contraseña"  class="logintext" required> <br>
-						<?php
-							include('errors.php');
-						?>
 					</div>
 					<br>
 					<input type="submit" name="login" value="ENVIAR" class="enviar1">

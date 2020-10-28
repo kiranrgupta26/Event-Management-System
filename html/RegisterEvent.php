@@ -1,11 +1,8 @@
-<?php
-session_start();
-if(!isset($_SESSION['username'])){
-  	header('Location:default1.php');
-  }
-?>
 <!-- Gupta,Kiran Rambilas : 1001726759
 Deo, Neel Jayant : 1001773075 -->
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,11 +32,9 @@ Deo, Neel Jayant : 1001773075 -->
 
 	<nav class="sidemenu">
 		<ul>
-			<?php  echo "<li><a href='MyEvents.php'>My Events</a></li>"; ?>
-			<?php echo "<li><a class='active' href='RegisterEvent.php'>Register For Event</a></li>"; ?>	  
-		  <?php  
-		  echo "<li><a href='default1.php'>Logout</a></li>";
-		  ?>
+			<?php  echo "<li><a href='MyEvents.php?user=". $_GET['user']."'>My Events</a></li>"; ?>
+			<li><a class="active" href="RegisterEvent.php">Register For Event</a></li>		  
+		  <li><a href="default1.php">Logout</a></li>
 		</ul>
 	</nav>
 
@@ -48,8 +43,8 @@ Deo, Neel Jayant : 1001773075 -->
   <?php
         
 		include 'connection.php';
-		$username= $_SESSION["username"];
-		
+		$user= $_GET["user"];
+		//echo $user;
 		$conn = OpenCon();
 
 		$sql = "select eventID,eventName,location,date,time from event";
@@ -60,7 +55,7 @@ Deo, Neel Jayant : 1001773075 -->
 		echo "<table id='displayevent'><tr><th>Events</th><th>Date</th><th>View</th><th>Action</th></tr>";
 		while($row = mysqli_fetch_assoc($result))
 		{
-			echo "<tr><td>".$row['eventName'] . "</td><td>" .$row['date'] ."</td><td><a href='EventInfo.php?eventid=". $row['eventID']. "'>Info</a></td><td> <a href='register_event.php?eventid=".$row['eventID']."'>Register</a></td></tr>";
+			echo "<tr><td>".$row['eventName'] . "</td><td>" .$row['date'] ."</td><td><a href='EventInfo.php?eventid=". $row['eventID']. "'>Info</a></td><td> <a href='register_event.php?eventid=".$row['eventID']."&user=".$user."'>Register</a></td></tr>";
 		}
 		echo "</table>";
 	}	

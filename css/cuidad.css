@@ -745,14 +745,6 @@ margin: 5px;
   overflow: auto;
 }
 
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
-}
 
 .popup_indiv {
 	border-top: 1px solid #b3b6ba; 

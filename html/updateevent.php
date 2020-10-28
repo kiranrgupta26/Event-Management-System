@@ -1,7 +1,4 @@
 <?php
-if(isset($_POST["update"])){
-
-
 include 'connection.php';
 $eventname = $_POST["eventname"];
 $eventlocation = $_POST["eventlocation"];
@@ -17,7 +14,5 @@ $sql = "Update event set eventName='$eventname' , email = '$eventresponsible' , 
 
 mysqli_query($conn,$sql);
 
-header('Location: Events.php');
-exit();
-}
+header("Location: Events.php?user=".$username);
 ?>
