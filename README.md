@@ -4,8 +4,26 @@ This website list down the events happening in your University and the user can 
 # Tech/framework used
 HTML,CSS,PHP,JavaScript,Laravel
 
-# Screenshots
+# Few Screenshots
+Register Page : 
 
+<img src = "images/LoginRegister.png" width=700 />
+
+Display Events Page : 
+
+<img src = "images/Events.png" width=700 />
+
+Contact Us Page : 
+
+<img src = "images/contactus.png" width=700 />
+
+Blog : 
+
+<img src = "images/Blog.png" width=700 />
+
+Add Events Page : 
+
+<img src = "images/addEvents.png" width=700 />
 
 # Features
 - It allows the admin to post the events happening in your University.
