@@ -2,7 +2,7 @@
 This website list down the events happening in your University and the user can easily register for the events.
 
 # Tech/framework used
-HTML,CSS,PHP,JavaScript,Laravel
+HTML,CSS,PHP,JavaScript
 
 # Few Screenshots
 Register Page : 
