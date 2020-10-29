@@ -22,4 +22,4 @@ http://krg6759.uta.cloud/gupta_ciudad/html/default1.php
 - If you registered as User, ou will be redirected to Register to Events, where you can register, de-reister for the events, and can also view the details about the events.
 
 # License
-UTA&copyKiranGupta
+UTA&copy;KiranGupta
