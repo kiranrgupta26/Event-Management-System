@@ -4,6 +4,9 @@ This website list down the events happening in your University and the user can 
 # Tech/framework used
 HTML,CSS,PHP,JavaScript,Laravel
 
+# Screenshots
+
+
 # Features
 - It allows the admin to post the events happening in your University.
 - Admin can also view the list of all the students registered for the events.
